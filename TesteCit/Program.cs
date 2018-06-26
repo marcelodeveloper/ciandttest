@@ -72,10 +72,7 @@ namespace TesteCit
             bool validC = (1 <= c && c <= n);
             bool validM = (2 <= m && m <= n);
 
-            if (validT && validN && validC && validM)
-                return true;
-            else
-                return false;
+            return (validT && validN && validC && validM);
         }
 
         #endregion
@@ -90,7 +87,6 @@ namespace TesteCit
 
         static void SpeedWheel(string[] wheels)
         {
-            //string[,,] matriz = new string[4,4,4];
             string[][] matr = new string[wheels.Length][];
 
             for (int i = 0; i < wheels.Length; i++)
